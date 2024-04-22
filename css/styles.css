@@ -246,7 +246,7 @@ padding: 50px;
   z-index: -1;
 }
 
-.services-text{
+.services-text, .team-slogan{
   font-weight: 900;
   font-size: 36px;
   line-height: 1.17;
@@ -367,15 +367,20 @@ margin-bottom: 5px;}
 }
 
 .experience-section{
-    /* background-image: linear-gradient(
-      to right,
-      rgba(36, 37, 45, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/336889928_156430100632458_5876011689946781195_n.jpg);
-  background-color: var(--hero-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-    padding: 60px; */
+position: relative;
+padding: 50px;
 }
+
+.experience-section::before{
+ content: "";
+  width: 100%;
+  height: 40vw;
+  background-image: linear-gradient(var(--yellow-background-color), var(--white-background-color));
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: skewX(-50deg);
+  transform-origin: right top;
+  z-index: -1;
+}
+
