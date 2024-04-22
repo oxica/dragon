@@ -1,0 +1,61 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #e21212;
+  --black-logo-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --white-background-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--white-background-color);
+  color: var(--primary-text-color);
+}
+
+/* убираем точки списков */
+.list {
+  list-style: none;
+}
+
+/* убираем подчеркивание ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* глобальный сброс margin, padding */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  align-items: center;
+  text-align: center;
+  text-transform:uppercase;
+    
+  color: var(--accent-color);
+}
