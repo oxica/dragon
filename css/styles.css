@@ -67,6 +67,7 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  text-transform:uppercase;
 
   color: var(--primary-text-color);
 }
@@ -366,9 +367,12 @@ margin-bottom: 5px;}
   letter-spacing: 0.02em;
 }
 
+/* ------------experience-section-------------- */
+
+
 .experience-section{
 position: relative;
-padding: 50px;
+padding: 60px;
 }
 
 .experience-section::before{
@@ -384,3 +388,80 @@ padding: 50px;
   z-index: -1;
 }
 
+.team-slogan{
+margin-bottom: 60px;
+}
+
+.experience-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.experience-item{
+    background-color: var(--team-background-color);
+    padding: 10px;
+    width: 350px;
+    max-width: 400px;
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+
+  border-radius: 16px;
+    box-shadow: 0 40px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience-pretext{
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+
+  color: var(--accent-color);
+}
+
+.experience-text{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
+/* ------------client-section-------------- */
+
+.client-section{
+padding: 60px;
+  background-color: var(--hero-background-color);
+
+}
+
+
+.client-section-title{
+  color: var(--white-text-color);
+  margin-bottom: 30px;
+}
+
+.client-text{
+  color: var(--white-text-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.client-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.client-item{
+   border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.87);
+
+  border-radius: 16px;
+    box-shadow: 10px 40px 30px rgba(255, 255, 255, 0.1);
+    padding: 50px;
+}
