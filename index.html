@@ -228,12 +228,12 @@
               </ul>
             </li>
           </ul>
-          <ul class="team-tasks-list list">
+          <!-- <ul class="team-tasks-list list">
             <li class="team-tasks-item">Ochrona</li>
             <li class="team-tasks-item">Komfort</li>
             <li class="team-tasks-item">Szybka reakcja</li>
             <li class="team-tasks-item">Elastyczny czas pracy</li>
-          </ul>
+          </ul> -->
         </div>
       </section>
       <section class="experience-section" id="doświadczenie">
@@ -320,11 +320,28 @@
         <div class="container">
           <h2 class="section-title">Kontakt</h2>
           <p class="contact-text">Nie odkładaj swojej obrony na później</p>
-          <p class="contact-form-text">
-            Wypełnij formularz i uzyskaj bezpłatną konsultację
-          </p>
+          <p class="contact-form-text">Wypełnij formularz i uzyskaj bezpłatną konsultację</p>
+          <button class="hero-btn" type="button" data-modal-open>Napisz do nas</button>
+          <!-- <ul class="contact-photo-list list">
+          <li class="contact-photo-item">
+            <img src="./images/01.jpg" alt="" height="250">
+          </li>
+          <li class="contact-photo-item">
+            <img src="./images/02.jpg" alt="" height="250">
+          </li>
+          
+          <li class="contact-photo-item">
+            <img src="./images/04.jpg" alt="" height="250">
+          </li>
+          <li class="contact-photo-item">
+            <img src="./images/05.jpg" alt="" height="250">
+          </li>
+        </ul> -->
         </div>
+        
       </section>
+      </main>
+    
       <footer class="footer">
         <div class="container">
           <div class="footer-flex">
@@ -418,8 +435,65 @@
           </div>
         </div>
       </footer>
-    </main>
+
+    
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>
+            <svg class="modal-icon" width="11" height="11">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+          
+          <form class="form">
+            <span class="form-title">Zostaw swoje dane, oddzwonimy do ciebie</span>
+                 
+            <div class="form-field top-title">
+              <label class="form-label" for="name">Imię</label>
+              <input class="form-input" type="text" name="name" id="name">
+              <svg class="input-icon" width="12" height="12">
+                <use
+                    href="./images/icons.svg#icon-name"
+                ></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="tel">Telefon</label>
+              <input class="form-input" type="tel" name="tel" id="tel">
+              <svg class="input-icon" width="12" height="12">
+                <use
+                    href="./images/icons.svg#icon-tel"
+                ></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">E-mail</label>
+              <input class="form-input" type="email" name="email" id="email">
+              <svg class="input-icon" width="12" height="12">
+                <use
+                    href="./images/icons.svg#icon-mail"
+                ></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label class="comment-label" for="comment">Wiadomośc</label>
+              <textarea class="comment" name="comment" id="comment" rows="9" placeholder="Napisz wiadomośc"></textarea>
+            </div>
+            <div class="form-field-chek">
+              
+              <label class="policy-label" for="policy"></a> 
+                <input class="form-checkbox" type="checkbox" name="policy" id="policy">
+                <span class="icon-chek"></span>
+                Wyrażam zgodę na newsletter i akceptuję<a class="policy-link" href="">Warunki umowy</a>
+              </label>
+              
+            </div>
+            <button class="form-btn" type="submit">Wysłać</button>
+          </form>
+      </div>
+    </div>
         <script src="script.js"></script>
+         <script src="./js/modal.js"></script>
 
   </body>
 </html>
